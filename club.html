@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YamagaDeGo! - クラブ情報</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="	image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="css/mycss.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+	<!-- - - - - - - - ヘッダー  - - - - - - - - -->
+	<div id="container">
+
+		<header>
+			<img src="img/YamagaLogo_mini.gif" alt="logo">
+			<h1><p>Yamaga De Go!</p></h1>
+			<ul>
+				<li id="name">ようこそゲストさん！</li>
+				<li><a href="http://google.com">新規登録</a></li>
+				<li><a href="http://google.com">ログイン</a></li>
+			</ul>
+		</header>
+
+		<!-- - - - - - - - メニュー  - - - - - - - - -->
+
+		<nav>
+			<ul class="nav nav-pills nav-justified">
+				<li role="presentation"><a href="index.html">
+					<i class="glyphicon glyphicon-home"></i> TOP</a>
+				</li>
+				<li role="presentation"><a href="news.html">
+					<i class="glyphicon glyphicon-duplicate"></i> ニュース</a>
+				</li>
+				<li role="presentation"><a href="club.html">
+					<i class="glyphicon glyphicon-user"></i> クラブ</a>
+				</li>
+				<li role="presentation"><a href="chant.html">
+					<i class="glyphicon glyphicon-music"></i> チャント</a>
+				</li>
+				<li role="presentation"><a href="board.html">
+					<i class="glyphicon glyphicon-list"></i> 掲示板</a>
+				</li>
+				<li role="presentation"><a href="contact.html">
+					<i class="glyphicon glyphicon-phone-alt"></i> お問い合せ</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- - - - - アイキャッチ - - - - - -->
+		<div id="frame">
+			<div id="club_data">
+				<div id="club_eyecatch">
+					<h4>クラブ情報</h4>
+				</div>
+				<p>
+					松本山雅フットボールクラブは、1965年当時に結成された長野県選抜の選手を中心とした歴史あるチームで、常に高いレベルのサッカーを目指し、活動を続けているプロサッカークラブです。クラブ名は当時の選手が松本駅前にあった喫茶店「山雅」へよく通っていたことに由来します。<br><br>
+					松本山雅ＦＣはトップチームの活動もさる事ながら、2003年春より、カデゴリーごとに一貫した指導のできる育成組織をスタートさせました。 「松本山雅ユースアカデミー」では、全国に通用する選手の育成と、将来に渡ってサッカーに携われる人間を多く輩出する為の活動を行なっております。総クラブ員数は約２６０名。これらの活動は、地域に於けるサッカーの普及・サッカー文化の発展という意味において、非常に重要だと認識し、今後もさらなる発展を目指し、活動を続けていきます。<br>
+				</p>
+				<!-- テーブル -->
+				<table class="table table-bordered">
+					<thead>
+						<tr><th id="table_title">クラブ概要</th></tr>
+					</thead>
+					<tbody>
+						<tr><th>チーム名</th><td>松本山雅フットボールクラブ（松本山雅FC）</td></tr>
+						<tr><th>チームタウン</th><td>松本市、塩尻市、山形村、安曇野市、大町市</td></tr>
+						<tr><th>ホームスタジアム</th><td>長野県松本平広域公園総合球技場（アルウィン）
+							<iframe id="stadium_map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25674.514052536255!2d137.9072122817777!3d36.179786051176784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x981b97d91f5a3b45!2z44Ki44Or44Km44Kj44Oz!5e0!3m2!1sja!2sjp!4v1449933449178" width="500" height="300" frameborder="0" style="border:0" allowfullscreen>
+							</iframe></td></tr>
+							<tr><th>練習グランド</th><td><a id="ground_link"  href="https://goo.gl/maps/CM5kb66GMZM2" target="_blank">松本市かりがねサッカー場</a>（松本市大字惣社325番地）<br></td></tr>
+						</tbody>
+					</thead>
+				</table>
+
+				<!-- - - - - 選手 - - - - - -->
+				<div id="club_player">
+
+					<table class="table table-bordered table-condensed">
+						<thead>
+							<tr>
+								<tr><th id="table_title">選手</th></tr>
+
+								<th id="for_width" class="dothesort" data-type="integer">背番号<span class="arrow"> ▷                  </span></th>
+								<th class="dothesort" data-type="string">名前</th>
+							</tr>
+						</thead>
+						<tbody class="player_tbody">
+							<tr class="player">
+								<td class="number">3</td>
+								<td><a href="https://ja.wikipedia.org/wiki/%E7%94%B0%E4%B8%AD%E9%9A%BC%E7%A3%A8" data-toggle="tooltip" title="wikipedia" target="_blank">田中 隼磨 (DF) </a><span class="label label-primary">キャプテン</span></td>
+							</tr>
+							<tr class="player">
+								<td class="number">9</td>
+								<td><a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%93%E3%83%8A" data-toggle="tooltip" title="wikipedia" target="_blank">オビナ (FW)</a></td>
+							</tr>
+							<tr class="player">
+								<td class="number">22</td>
+								<td><a href="https://ja.wikipedia.org/wiki/%E5%89%8D%E7%94%B0%E7%9B%B4%E8%BC%9D" data-toggle="tooltip" title="wikipedia" target="_blank">前田 直輝 (MF)</a></td>
+							</tr>
+							<tr class="player">
+								<td class="number">8</td>
+								<td><a href="https://ja.wikipedia.org/wiki/%E5%B2%A9%E4%B8%8A%E7%A5%90%E4%B8%89" data-toggle="tooltip" title="wikipedia" target="_blank">岩上 祐三 (MF)</a></td>
+							</tr>
+							<tr class="player">
+								<td class="number">1</td>
+								<td><a href="https://ja.wikipedia.org/wiki/%E6%9D%91%E5%B1%B1%E6%99%BA%E5%BD%A6" data-toggle="tooltip" title="wikipedia" target="_blank">村山 智彦 (GK)</a></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div><!-- club_player -->
+
+			</div><!-- club_data -->
+
+			<!-- - - - - サイドバー - - - - - -->
+			<div id="sidebar">
+				<h4>MENU</h4>
+				<ul>
+					<li><a href="index.html">TOP</a></li>
+					<li><a href="news.html">ニュース</a></li>
+					<li><a href="club.html">クラブ</a></li>
+					<li><a href="chant.html">チャント</a></li>
+					<li><a href="board.html">掲示板</a></li>
+					<li><a href="contact.html">お問い合せ</a></li>
+				</ul>
+			</div><!-- sidebar -->
+		</div><!-- frame -->
+
+		<!-- - - - - フッター - - - - - -->
+		<footer>
+			<p>©2016 YamagaDeGo.com All Right Reserved</p>
+		</footer>
+
+	</div><!-- container -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- JavaScript -->
+	<script>
+	$(function() {
+		////////選手テーブル並び替え処理/////////
+		var sortOrder = 1; // 1:昇順, -1:降順
+
+		$(".dothesort").click(function() {
+
+			var type = $(this).data("type");//string , integer
+			var col = $(this).index();// 0, 1, 2, ...
+
+			var $rows = $(".player");//行全体を取得
+
+			//行を並び替え（背番号で）
+			$rows.sort(function(a, b) {
+				return compare(a, b, type, col) * sortOrder;
+			});
+
+			//tbodyを並び替えされた行全体で入れ替え
+			$(".player_tbody").empty().append($rows);
+
+			//並び替えの種類をマークで表示
+			var arrow = sortOrder === 1 ? " ▲" : " ▼";
+			$(".dothesort > .arrow").text("");
+			$(this).find(".arrow").text(arrow);
+
+			//並び替えを反転
+			sortOrder *= -1;
+
+		});
+
+		function compare(a, b, type, col) {
+			var _a = $(a).find(".number").eq(col).text();
+			var _b = $(b).find(".number").eq(col).text();
+
+			if(type == "string") {
+				if(_a < _b){
+					return -1;
+				}
+				if(_a > _b){
+					return 1;
+				}
+				return 0;
+			}else {
+				_a *= 1; // *= 1は文字列から数値に変換
+				_b *= 1;
+				return _a - _b;
+			}
+		}
+
+		//tooltip
+		$("[data-toggle=tooltip]").tooltip();
+	});
+	</script>
+
+	<!-- LiveReload -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
